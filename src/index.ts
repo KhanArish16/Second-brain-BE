@@ -11,7 +11,6 @@ app.use(express.json());
 app.use(cors());
 
 app.post("/api/v1/signup", async (req, res) => {
-    // TODO: zod validation , hash the password
     const username = req.body.username;
     const password = req.body.password;
 
